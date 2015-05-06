@@ -1,6 +1,10 @@
 # Shut up rubocop!!!
 class RestaurantsController < ApplicationController
   def index
-    # fail 'Hello from the index action!'
+    @restaurants = Restaurant.all
+  end
+
+  def new
+
   end
 end
